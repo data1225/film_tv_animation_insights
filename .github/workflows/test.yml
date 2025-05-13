@@ -1,4 +1,4 @@
-name: Run Youtube Get Topics Video Data Task Script
+name: Test Script
 
 on:
   workflow_dispatch:
