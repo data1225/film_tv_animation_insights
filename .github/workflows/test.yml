@@ -1,0 +1,33 @@
+name: Run Youtube Get Topics Video Data Task Script
+
+on:
+  workflow_dispatch:
+  schedule:
+    - cron: '0 8 * * *'
+
+jobs:
+  run-script:
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Checkout code
+        uses: actions/checkout@v3
+
+      - name: Set up Python
+        uses: actions/setup-python@v4
+        with:
+          python-version: 3.11
+
+      - name: Install dependencies
+        run: |
+          pip install -r requirements.txt
+
+      - name: Create .env from GitHub Secrets
+        run: |
+          echo "API_KEY=${{ secrets.API_KEY }}" >> .env
+          echo "YOUTUBE_SPREADSHEET_ID=${{ secrets.YOUTUBE_SPREADSHEET_ID }}" >> .env
+          echo "YOUTUBE_SEARCH_FILM_WORKSHEET_NAME=${{ secrets.YOUTUBE_SEARCH_FILM_WORKSHEET_NAME }}" >> .env
+          echo "GOOGLE_SHEET_JSON_B64=${{ secrets.GOOGLE_SHEET_JSON_B64 }}" >> .env
+
+      - name: Run Python script
+        run: python cron_jobs/youtube_get_topics_video_data_task.py
