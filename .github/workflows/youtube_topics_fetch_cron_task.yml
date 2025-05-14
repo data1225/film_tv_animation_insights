@@ -1,9 +1,9 @@
 name: Youtube topics fetch cron task
 
 on:
-  workflow_dispatch:
+  workflow_dispatch: # 允許手動觸發
   schedule:
-    - cron: '0 8 * * *'
+    - cron: '0 16 * * *' # 是UTC時間
 
 jobs:
   run-script:
