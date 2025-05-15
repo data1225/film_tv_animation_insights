@@ -3,7 +3,7 @@ name: Youtube topics fetch cron task
 on:
   workflow_dispatch: # 允許手動觸發
   schedule:
-    - cron: '0 16 * * *' # 是UTC時間
+    - cron: '0 16 27 * *' # 是UTC時間，因GitHub Action不支持動態取最後一天，所以訂28日(日子最少月份的最後一天)搜集資料
 
 jobs:
   run-script:
