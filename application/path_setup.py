@@ -4,9 +4,8 @@ import sys
 def setup_project_root():
     if os.getenv("GITHUB_WORKSPACE"):
         # GitHub Actions 環境
-        project_root = os.getenv("GITHUB_WORKSPACE")
-        # github_workspace = os.getenv("GITHUB_WORKSPACE")
-        # project_root = os.path.abspath(os.path.join(github_workspace, ".."))
+        github_workspace = os.getenv("GITHUB_WORKSPACE")
+        project_root = os.path.abspath(os.path.join(github_workspace, ".."))
     else:
         # 本地 Jupyter Notebook 或其他開發環境
         current_dir = os.path.dirname(os.path.abspath("__file__"))
