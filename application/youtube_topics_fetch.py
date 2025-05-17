@@ -32,11 +32,10 @@ search_youtube_result = BaseResponse[YoutubeVideo](
 )    
 start_utc_datetime, end_utc_datetime = get_previous_month_range_in_utc()
 topics = [
-    Topic('心理議題', ['心理學'])
-    # Topic('心理議題', ['心理學', '自我成長', '心情', '感情']),
-    # Topic('社會弱勢議題', ['社會弱勢', '經濟弱勢', '社會不平等']),
-    # Topic('社會議題', ['社會議題', '社會問題']),
-    # Topic('科技議題', ['AI', '科技']),
+    Topic('心理議題', ['心理學', '自我成長', '心情', '感情']),
+    Topic('社會弱勢議題', ['社會弱勢', '經濟弱勢', '社會不平等']),
+    Topic('社會議題', ['社會議題', '社會問題']),
+    Topic('科技議題', ['AI', '科技']),
 ]
 for topic in topics:
     for keyword in topic.keywords:
