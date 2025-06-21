@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<urlset 
+  xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
+
+  <url>
+    <loc>https://data1225.github.io/film_tv_animation_insights/index.html</loc>
+    <priority>1.0</priority>
+  </url>
+
+  <url>
+    <loc>https://data1225.github.io/film_tv_animation_insights/disclaimer.html</loc>
+    <priority>0.5</priority>
+  </url>
+
+  <url>
+    <loc>https://data1225.github.io/film_tv_animation_insights/privacy-policy.html</loc>
+    <priority>0.5</priority>
+  </url>
+
+  <url>
+    <loc>https://data1225.github.io/film_tv_animation_insights/terms-of-use.html</loc>
+    <priority>0.5</priority>
+  </url>
+
+</urlset>
