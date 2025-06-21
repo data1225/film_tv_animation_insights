@@ -5,7 +5,6 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>Film, TV, and Animation Insights</title>
   <link rel="stylesheet" href="style.css" />
-  <script src="script.js" defer></script>
 </head>
 <body>
   <div class="wrapper">
@@ -32,7 +31,7 @@
               <li><a href="#section1-4">台灣 - OTT產業營收概況</a></li>
               <li><a href="#section1-5">台灣 - 圖書及漫畫產業營收概況</a></li>
               <li><a href="#section1-6">台灣 - 電子遊戲產業營收概況</a></li>
-              <li><a href="#section1-7">台灣 - 觀眾使用與付費趨勢</a></li>
+              <li><a href="#section1-7">台灣 - 數位平台使用趨勢</a></li>
               <li><a href="#section1-8">中國 - 2023–2027年市場成長預估</a></li>
             </ul>
           </li>
@@ -234,7 +233,58 @@
 
           <!-- Section 1-7 -->
           <section id="section1-7"  class="section">
-            <h4>台灣 - 觀眾使用與付費趨勢</h4>
+            <h4>台灣 - 數位平台使用趨勢</h4>
+
+            <p>
+              資料來源：TWNIC 財團法人台灣網路資訊中心<br />
+              資料內容：<a target="_blank" href="https://www.twnic.tw/doc/twrp/202410f.pdf">《2024年10月網路使用調查》</a>
+            </p>
+            <p>
+              (來源頁數：P.7)<br />
+              • 各網路應用服務使用趨勢
+            </p>
+            <table class="w-50">
+              <thead>
+                <tr>
+                  <th>網路應用服務</th>
+                  <th>2024年使用率</th>
+                  <th>2020-2024年間使用趨勢</th>
+                </tr>
+              </thead>
+              <tbody>
+                <tr>
+                  <td>即時通訊</td>
+                  <td>98.61%</td>
+                  <td>無明顯變化，呈穩定趨勢。</td>
+                </tr>
+                <tr>
+                  <td>觀看免費網路影音、直播或收聽音樂</td>
+                  <td>83.35%</td>
+                  <td>先升後降，整體呈些微上升。</td>
+                </tr>
+                <tr>
+                  <td>社群網站</td>
+                  <td>83.00%</td>
+                  <td>無明顯變化，呈穩定趨勢。</td>
+                </tr>
+                <tr>
+                  <td>買賣東西</td>
+                  <td>57.55%</td>
+                  <td>逐漸下降。</td>
+                </tr>
+                <tr>
+                  <td>網路線上遊戲</td>
+                  <td>36.40%</td>
+                  <td>逐漸下降。</td>
+                </tr>
+                <tr>
+                  <td>線上交友</td>
+                  <td>6.61%</td>
+                  <td>逐漸下降。</td>
+                </tr>
+              </tbody>
+            </table>            
+            
             <p>
               資料來源：TAICCA 文化內容產業研究資料庫<br />
               資料內容：<a target="_blank" href="https://research.taicca.tw/pdf_embedded/265d5b10-88b6-3855-b788-66b1ef57d13b">《2023年文化內容消費趨勢調查報告》</a>
@@ -248,7 +298,7 @@
                 <tr>
                   <th>內容產業</th>
                   <th>閱聽率</th>
-                  <th>閱聽者付費率</th>
+                  <th>閱聽人付費率</th>
                 </tr>
               </thead>
               <tbody>
@@ -343,6 +393,7 @@
                 </tr>
               </tbody>
             </table>
+
           </section>
 
           <!-- Section 1-8 -->
@@ -906,7 +957,7 @@
           1.是否能吸引足夠的關注（流量）<br />
           2.在既有市場中具備什麼樣的特色與差異<br />
           3.是否具有延展性，未來能否轉化為不同形式的內容或衍生作品<br />
-          這些角度，主要是協助創作者更立體地思考故事的可能性與彈性，也讓創作更貼近讀者、觀眾或其他閱聽者的需求。<br />
+          這些角度，主要是協助創作者更立體地思考故事的可能性與彈性，也讓創作更貼近讀者、觀眾或其他閱聽人的需求。<br />
           <br />
           此外，若在過程中發現設定的主題過於常見，也可回到「熱門議題」區段，重新尋找更具辨識度的切入點。<br />
           <br />
@@ -1208,5 +1259,16 @@
   </div>
 
   <button id="back-to-top" onclick="scrollToToc()">↑ 目錄</button>
+  
+  <!-- Google tag (gtag.js) -->
+  <script async src="https://www.googletagmanager.com/gtag/js?id=G-G59ZHSV9GD"></script>
+  <script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag(){dataLayer.push(arguments);}
+    gtag('js', new Date());
+
+    gtag('config', 'G-G59ZHSV9GD');
+  </script>
+  <script src="script.js" defer></script>
 </body>
 </html>

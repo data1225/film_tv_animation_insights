@@ -5,7 +5,6 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>Privacy policy</title>
   <link rel="stylesheet" href="style.css" />
-  <script src="script.js" defer></script>
 </head>
 <body>
   <div class="wrapper">
@@ -30,8 +29,9 @@
 
         <h4>Cookie 與第三方服務</h4>
         <p>
-            為改善網站內容與使用者體驗，本站可能使用第三方服務（如 Google Analytics）進行匿名統計分析。這些工具可能使用 Cookie 技術，依其設計原則不會主動取得可識別個人身分之資訊。<br />
-            使用者可自行透過瀏覽器設定，限制或停用 Cookie。
+            為提升網站內容品質與使用者體驗，本站使用第三方分析服務（例如 Google Analytics）進行匿名統計分析。
+            該類服務會透過 Cookie 技術收集使用行為資料，依其設計原則，不會主動蒐集足以識別個人身分之資訊。
+            使用者可依自身需求，透過瀏覽器設定限制或停用 Cookie。
         </p>
 
         <h4>第三方網站連結</h4>
@@ -65,5 +65,16 @@
     </footer>
 
   </div>
+
+  <!-- Google tag (gtag.js) -->
+  <script async src="https://www.googletagmanager.com/gtag/js?id=G-G59ZHSV9GD"></script>
+  <script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag(){dataLayer.push(arguments);}
+    gtag('js', new Date());
+
+    gtag('config', 'G-G59ZHSV9GD');
+  </script>
+  <script src="script.js" defer></script>
 </body>
 </html>
