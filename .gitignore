@@ -1,7 +1,0 @@
-.env
-!.env.example
-**/google-sheet-key.json
-
-**/.ipynb_checkpoints/
-**/__pycache__/
-.secrets
